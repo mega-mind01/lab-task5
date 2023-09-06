@@ -16,6 +16,12 @@ body{
     display: flex;
 }
 
+.container .sep{
+    margin-top: 20px;
+    border-top: dotted black;
+    height: 1px;
+}
+
 .container header .logo{
     margin: 10px;
     width: 20%;
@@ -27,7 +33,6 @@ body{
 
 .container header ul{
     width:80% ;
-    display: flex;
     height: 40px;
     margin: 10px;
     display: flex;
@@ -86,12 +91,18 @@ body{
 
 .container .learn, .learn2{
     padding: 10px;
-    border: solid red;
     display: flex;
 }
 
+.container .pt1, .point1{
+    margin-right: 10px;
+}
+
+.container .pt2, .point2{
+    margin-left: 10px;
+}
+
 .container .learn .point1 .img{
-    border: solid blue;
     margin: 5px;
     height: 200px;
     background-image: url(../images/about-plan.png);
@@ -99,7 +110,6 @@ body{
 }
 
 .container .learn .point2 .img{
-    border: solid blue;
     margin: 5px;
     height: 200px;
     background-image: url(../images/about-working.png);
@@ -107,7 +117,6 @@ body{
 }
 
 .container .learn2 .pt1 .img{
-    border: solid blue;
     margin: 5px;
     height: 200px;
     background-image: url(../images/about-office.png);
@@ -115,11 +124,9 @@ body{
 }
 
 .container .learn2 .pt2 .img{
-    border: solid blue;
     margin: 5px;
     height: 200px;
-    background-image: url(../images/about-meeting.png);
-    
+    background-image: url(../images/about-meeting.png);   
 }
 
 .container .mid{
@@ -143,8 +150,48 @@ body{
     margin: 20px;
     width: 100px;
     height: 70px;
-    border: solid red;
     text-align: center;
+    padding-top: 25px;
+}
+
+.container .mid-widget1 .widget:nth-child(1){
+    background-color: green;
+}
+
+.container .mid-widget1 .widget:nth-child(2){
+    background-color: yellow;
+}
+
+.container .mid-widget1 .widget:nth-child(3){
+    background-color: teal;
+}
+
+.container .mid-widget1 .widget:nth-child(4){
+    background-color: orange;
+}
+
+.container .mid-widget1 .widget:nth-child(5){
+    background-color: red;
+}
+
+.container .mid-widget2 .widget:nth-child(1){
+    background-color: greenyellow;
+}
+
+.container .mid-widget2 .widget:nth-child(2){
+    background-color: rgb(227, 168, 227);
+}
+
+.container .mid-widget2 .widget:nth-child(3){
+    background-color: palevioletred;
+}
+
+.container .mid-widget2 .widget:nth-child(4){
+    background-color: purple;
+}
+
+.container .mid-widget2 .widget:nth-child(5){
+    background-color: rgb(142, 165, 221);
 }
 
 .container .footer{
