@@ -16,10 +16,8 @@ body{
     display: flex;
 }
 
-.container .sep{
-    margin-top: 20px;
-    border-top: dotted black;
-    height: 1px;
+.container hr{
+    border-top: dotted;
 }
 
 .container header .logo{
@@ -27,25 +25,30 @@ body{
     width: 20%;
     height: 40px;
     background-image: url(../images/softhills-logo.png);
-    background-size: 120px;
+    background-size: 140px;
     background-repeat: no-repeat
 }
 
-.container header ul{
-    width:80% ;
+.container header nav{
+    width: 80%;
+}
+
+.container header nav ul{
+    width: 90% ;
     height: 40px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.container header ul li{
+.container header nav ul li{
     margin: 2px;
     text-decoration: none;
     list-style-type: none;
+    padding-top: 8px;
 }
 
-.container header ul li a{
+.container header nav ul li a{
     text-decoration: none;
     color: black;
 }
@@ -74,10 +77,6 @@ body{
 
 .container .banner .about{
     padding: 10px;
-}
-
-.container .banner div h2{
-    font-size: 18px;
 }
 
 .container .banner div p{
@@ -138,18 +137,18 @@ body{
     padding: 15px;
 }
 
-.container .mid .mid-widget1, .mid-widget2{
+.container .mid .mid-widget1{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    height: 100px;
+    justify-content: space-around;
+    min-height: 100px;
     flex-wrap: wrap;
 }
 
 .container .mid .widget{
     margin: 20px;
-    width: 100px;
-    height: 70px;
+    width: 15%;
+    height: 90px;
     text-align: center;
     padding-top: 25px;
 }
@@ -174,23 +173,23 @@ body{
     background-color: red;
 }
 
-.container .mid-widget2 .widget:nth-child(1){
+.container .mid-widget1 .widget:nth-child(6){
     background-color: greenyellow;
 }
 
-.container .mid-widget2 .widget:nth-child(2){
+.container .mid-widget1 .widget:nth-child(7){
     background-color: rgb(227, 168, 227);
 }
 
-.container .mid-widget2 .widget:nth-child(3){
+.container .mid-widget1 .widget:nth-child(8){
     background-color: palevioletred;
 }
 
-.container .mid-widget2 .widget:nth-child(4){
+.container .mid-widget1 .widget:nth-child(9){
     background-color: purple;
 }
 
-.container .mid-widget2 .widget:nth-child(5){
+.container .mid-widget1 .widget:nth-child(10){
     background-color: rgb(142, 165, 221);
 }
 
@@ -199,13 +198,8 @@ body{
     margin: 10px;
 }
 
-.container .footer h2{
-    display: flex;
-}
-
 .container .footer p{
     width: 70%;
-    height: 80px;
     display: flex;
 }
 
@@ -227,4 +221,15 @@ body{
 .container footer ul li a{
     text-decoration: none;
     color: white;
+}
+
+.container button{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container .h2{
+    font-size: 18px;
+    font-weight: 1;
+    padding: 10px 0;
 }
